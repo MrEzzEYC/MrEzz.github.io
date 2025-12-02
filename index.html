@@ -4,436 +4,257 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>جدول تحدي XBox النهائي</title>
-    <style>
-        /* لتطبيق خط عربي واضح */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    </style>
 </head>
-<body class="bg-gray-900 text-gray-100 p-4 md:p-8">
+<body class="bg-gray-900 p-4 md:p-12 font-sans text-white">
     
     <div class="max-w-6xl mx-auto bg-gray-800 shadow-2xl rounded-xl overflow-hidden border border-indigo-700">
 
-        <header class="bg-indigo-900 p-6 text-center border-b border-indigo-700">
-            <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-2">🎮 جدول تحدي XBox النهائي 📝</h1>
-            <p class="text-indigo-300 text-sm md:text-base">30 يوماً متتالياً من العمل (بواقع 2 بوست يومياً) - 60 بوست إجمالي</p>
+        <header class="bg-indigo-900 text-center p-6 border-b border-indigo-700">
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-1 tracking-wider">📝 جدول تحدي XBox النهائي 📝</h1>
+            <p class="text-md opacity-80 mt-2">30 يوماً من العمل المتواصل (يبدأ الاثنين 08/12)</p>
         </header>
 
-        <div class="overflow-x-auto">
-            <table class="min-w-full divide-y divide-gray-700">
-                <thead class="bg-gray-700">
+        <div class="p-4 overflow-x-auto">
+            <table class="w-full text-sm text-right text-gray-300">
+                <thead class="text-xs uppercase bg-gray-700 text-indigo-400">
                     <tr>
-                        <th scope="col" class="px-4 py-3 text-center text-sm font-semibold uppercase tracking-wider text-indigo-400 w-1/12">
-                            # اليوم
-                        </th>
-                        <th scope="col" class="px-4 py-3 text-center text-sm font-semibold uppercase tracking-wider text-indigo-400 w-4/12">
-                            النشاط الأول (P1)
-                        </th>
-                        <th scope="col" class="px-4 py-3 text-center text-sm font-semibold uppercase tracking-wider text-indigo-400 w-4/12">
-                            النشاط الثاني (P2)
-                        </th>
-                        <th scope="col" class="px-4 py-3 text-center text-sm font-semibold uppercase tracking-wider text-indigo-400 w-3/12 hidden md:table-cell">
-                            التركيز المشترك اليومي
-                        </th>
+                        <th scope="col" class="py-3 px-4 text-center">اليوم والتاريخ</th>
+                        <th scope="col" class="py-3 px-4">النشاط الأول (P1)</th>
+                        <th scope="col" class="py-3 px-4">النشاط الثاني (P2)</th>
+                        <th scope="col" class="py-3 px-4 text-center hidden md:table-cell">التركيز المشترك اليومي</th>
                     </tr>
                 </thead>
-                <tbody class="divide-y divide-gray-700">
-                    <tr class="bg-gray-800 hover:bg-gray-700 transition duration-150">
-                        <td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">1</td>
-                        <td class="px-4 py-3 text-sm font-medium text-center">Grammar</td>
-                        <td class="px-4 py-3 text-sm text-center text-indigo-300">Dictation</td>
-                        <td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قواعد وتركيز سمعي</td>
+                <tbody>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الاثنين 08/12</th>
+                        <td class="py-3 px-4">Grammar</td>
+                        <td class="py-3 px-4">Dictation</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">قواعد وتركيز سمعي</td>
                     </tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600 transition duration-150">
-                        <td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">2</td>
-                        <td class="px-4 py-3 text-sm font-medium text-center">SSS (Sing Sang Sung)</td>
-                        <td class="px-4 py-3 text-sm text-center text-indigo-300">One Word</td>
-                        <td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">نطق ومفردات سياقية</td>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الثلاثاء 09/12</th>
+                        <td class="py-3 px-4">SSS (Sing Sang Sung)</td>
+                        <td class="py-3 px-4">One Word</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">نطق ومفردات سياقية</td>
                     </tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">3</td><td class="px-4 py-3 text-sm font-medium text-center">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Alike HD</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قراءة وتحدث متقدم</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">4</td><td class="px-4 py-3 text-sm font-medium text-center">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Grammar</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تعابير نحوية وتطبيق قواعد</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">5</td><td class="px-4 py-3 text-sm font-medium text-center">Dictation</td><td class="px-4 py-3 text-sm text-center text-indigo-300">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">إملاء وطلاقة لفظية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">6</td><td class="px-4 py-3 text-sm font-medium text-center">One Word</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">مفردات وقراءة ثقافية</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">7</td><td class="px-4 py-3 text-sm font-medium text-center">Alike HD</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تحدث متقدم وتعابير اصطلاحية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">8</td><td class="px-4 py-3 text-sm font-medium text-center">Grammar</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Dictation</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قواعد وتركيز سمعي</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">9</td><td class="px-4 py-3 text-sm font-medium text-center">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-indigo-300">One Word</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">نطق ومفردات سياقية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">10</td><td class="px-4 py-3 text-sm font-medium text-center">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Alike HD</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قراءة وتحدث متقدم</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">11</td><td class="px-4 py-3 text-sm font-medium text-center">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Grammar</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تعابير نحوية وتطبيق قواعد</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">12</td><td class="px-4 py-3 text-sm font-medium text-center">Dictation</td><td class="px-4 py-3 text-sm text-center text-indigo-300">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">إملاء وطلاقة لفظية</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">13</td><td class="px-4 py-3 text-sm font-medium text-center">One Word</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">مفردات وقراءة ثقافية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">14</td><td class="px-4 py-3 text-sm font-medium text-center">Alike HD</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تحدث متقدم وتعابير اصطلاحية</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">15</td><td class="px-4 py-3 text-sm font-medium text-center">Grammar</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Dictation</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قواعد وتركيز سمعي</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">16</td><td class="px-4 py-3 text-sm font-medium text-center">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-indigo-300">One Word</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">نطق ومفردات سياقية</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">17</td><td class="px-4 py-3 text-sm font-medium text-center">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Alike HD</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قراءة وتحدث متقدم</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">18</td><td class="px-4 py-3 text-sm font-medium text-center">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Grammar</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تعابير نحوية وتطبيق قواعد</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">19</td><td class="px-4 py-3 text-sm font-medium text-center">Dictation</td><td class="px-4 py-3 text-sm text-center text-indigo-300">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">إملاء وطلاقة لفظية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">20</td><td class="px-4 py-3 text-sm font-medium text-center">One Word</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">مفردات وقراءة ثقافية</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">21</td><td class="px-4 py-3 text-sm font-medium text-center">Alike HD</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تحدث متقدم وتعابير اصطلاحية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">22</td><td class="px-4 py-3 text-sm font-medium text-center">Grammar</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Dictation</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قواعد وتركيز سمعي</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">23</td><td class="px-4 py-3 text-sm font-medium text-center">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-indigo-300">One Word</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">نطق ومفردات سياقية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">24</td><td class="px-4 py-3 text-sm font-medium text-center">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Alike HD</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قراءة وتحدث متقدم</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">25</td><td class="px-4 py-3 text-sm font-medium text-center">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Grammar</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تعابير نحوية وتطبيق قواعد</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">26</td><td class="px-4 py-3 text-sm font-medium text-center">Dictation</td><td class="px-4 py-3 text-sm text-center text-indigo-300">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">إملاء وطلاقة لفظية</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">27</td><td class="px-4 py-3 text-sm font-medium text-center">One Word</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">مفردات وقراءة ثقافية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">28</td><td class="px-4 py-3 text-sm font-medium text-center">Alike HD</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تحدث متقدم وتعابير اصطلاحية</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">29</td><td class="px-4 py-3 text-sm font-medium text-center">Grammar</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Dictation</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قواعد وتركيز سمعي</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">30</td><td class="px-4 py-3 text-sm font-medium text-center">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-indigo-300">One Word</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">نطق ومفردات سياقية</td></tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الأربعاء 10/12</th>
+                        <td class="py-3 px-4">Elmgazine</td>
+                        <td class="py-3 px-4">Alike HD</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">قراءة وتحدث متقدم</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الخميس 11/12</th>
+                        <td class="py-3 px-4">Figurative Focus</td>
+                        <td class="py-3 px-4">Grammar</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">تعابير نحوية وتطبيق قواعد</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الجمعة 12/12</th>
+                        <td class="py-3 px-4">Dictation</td>
+                        <td class="py-3 px-4">SSS (Sing Sang Sung)</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">إملاء وطلاقة لفظية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">السبت 13/12</th>
+                        <td class="py-3 px-4">One Word</td>
+                        <td class="py-3 px-4">Elmgazine</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">مفردات وقراءة ثقافية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الأحد 14/12</th>
+                        <td class="py-3 px-4">Alike HD</td>
+                        <td class="py-3 px-4">Figurative Focus</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">تحدث متقدم وتعابير اصطلاحية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الاثنين 15/12</th>
+                        <td class="py-3 px-4">Grammar</td>
+                        <td class="py-3 px-4">Dictation</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">قواعد وتركيز سمعي</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الثلاثاء 16/12</th>
+                        <td class="py-3 px-4">SSS (Sing Sang Sung)</td>
+                        <td class="py-3 px-4">One Word</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">نطق ومفردات سياقية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الأربعاء 17/12</th>
+                        <td class="py-3 px-4">Elmgazine</td>
+                        <td class="py-3 px-4">Alike HD</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">قراءة وتحدث متقدم</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الخميس 18/12</th>
+                        <td class="py-3 px-4">Figurative Focus</td>
+                        <td class="py-3 px-4">Grammar</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">تعابير نحوية وتطبيق قواعد</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الجمعة 19/12</th>
+                        <td class="py-3 px-4">Dictation</td>
+                        <td class="py-3 px-4">SSS (Sing Sang Sung)</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">إملاء وطلاقة لفظية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">السبت 20/12</th>
+                        <td class="py-3 px-4">One Word</td>
+                        <td class="py-3 px-4">Elmgazine</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">مفردات وقراءة ثقافية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الأحد 21/12</th>
+                        <td class="py-3 px-4">Alike HD</td>
+                        <td class="py-3 px-4">Figurative Focus</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">تحدث متقدم وتعابير اصطلاحية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الاثنين 22/12</th>
+                        <td class="py-3 px-4">Grammar</td>
+                        <td class="py-3 px-4">Dictation</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">قواعد وتركيز سمعي</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الثلاثاء 23/12</th>
+                        <td class="py-3 px-4">SSS (Sing Sang Sung)</td>
+                        <td class="py-3 px-4">One Word</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">نطق ومفردات سياقية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الأربعاء 24/12</th>
+                        <td class="py-3 px-4">Elmgazine</td>
+                        <td class="py-3 px-4">Alike HD</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">قراءة وتحدث متقدم</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الخميس 25/12</th>
+                        <td class="py-3 px-4">Figurative Focus</td>
+                        <td class="py-3 px-4">Grammar</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">تعابير نحوية وتطبيق قواعد</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الجمعة 26/12</th>
+                        <td class="py-3 px-4">Dictation</td>
+                        <td class="py-3 px-4">SSS (Sing Sang Sung)</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">إملاء وطلاقة لفظية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">السبت 27/12</th>
+                        <td class="py-3 px-4">One Word</td>
+                        <td class="py-3 px-4">Elmgazine</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">مفردات وقراءة ثقافية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الأحد 28/12</th>
+                        <td class="py-3 px-4">Alike HD</td>
+                        <td class="py-3 px-4">Figurative Focus</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">تحدث متقدم وتعابير اصطلاحية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الاثنين 29/12</th>
+                        <td class="py-3 px-4">Grammar</td>
+                        <td class="py-3 px-4">Dictation</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">قواعد وتركيز سمعي</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الثلاثاء 30/12</th>
+                        <td class="py-3 px-4">SSS (Sing Sang Sung)</td>
+                        <td class="py-3 px-4">One Word</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">نطق ومفردات سياقية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الأربعاء 31/12</th>
+                        <td class="py-3 px-4">Elmgazine</td>
+                        <td class="py-3 px-4">Alike HD</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">قراءة وتحدث متقدم</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الخميس 01/01</th>
+                        <td class="py-3 px-4">Figurative Focus</td>
+                        <td class="py-3 px-4">Grammar</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">تعابير نحوية وتطبيق قواعد</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الجمعة 02/01</th>
+                        <td class="py-3 px-4">Dictation</td>
+                        <td class="py-3 px-4">SSS (Sing Sang Sung)</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">إملاء وطلاقة لفظية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">السبت 03/01</th>
+                        <td class="py-3 px-4">One Word</td>
+                        <td class="py-3 px-4">Elmgazine</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">مفردات وقراءة ثقافية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الأحد 04/01</th>
+                        <td class="py-3 px-4">Alike HD</td>
+                        <td class="py-3 px-4">Figurative Focus</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">تحدث متقدم وتعابير اصطلاحية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الاثنين 05/01</th>
+                        <td class="py-3 px-4">Grammar</td>
+                        <td class="py-3 px-4">Dictation</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">قواعد وتركيز سمعي</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الثلاثاء 06/01</th>
+                        <td class="py-3 px-4">SSS (Sing Sang Sung)</td>
+                        <td class="py-3 px-4">One Word</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">نطق ومفردات سياقية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الأربعاء 07/01</th>
+                        <td class="py-3 px-4">Elmgazine</td>
+                        <td class="py-3 px-4">Alike HD</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">قراءة وتحدث متقدم</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الخميس 08/01</th>
+                        <td class="py-3 px-4">Figurative Focus</td>
+                        <td class="py-3 px-4">Grammar</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">تعابير نحوية وتطبيق قواعد</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الجمعة 09/01</th>
+                        <td class="py-3 px-4">Dictation</td>
+                        <td class="py-3 px-4">SSS (Sing Sang Sung)</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">إملاء وطلاقة لفظية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">السبت 10/01</th>
+                        <td class="py-3 px-4">One Word</td>
+                        <td class="py-3 px-4">Elmgazine</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">مفردات وقراءة ثقافية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الأحد 11/01</th>
+                        <td class="py-3 px-4">Alike HD</td>
+                        <td class="py-3 px-4">Figurative Focus</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">تحدث متقدم وتعابير اصطلاحية</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الاثنين 12/01</th>
+                        <td class="py-3 px-4">Grammar</td>
+                        <td class="py-3 px-4">Dictation</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">قواعد وتركيز سمعي</td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-700/50">
+                        <th scope="row" class="py-3 px-4 font-bold text-center text-indigo-400">الثلاثاء 13/01</th>
+                        <td class="py-3 px-4">SSS (Sing Sang Sung)</td>
+                        <td class="py-3 px-4">One Word</td>
+                        <td class="py-3 px-4 text-center hidden md:table-cell">نطق ومفردات سياقية</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
-    </div>
-</body>
-</html>                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-700">
-                    <tr class="bg-gray-800 hover:bg-gray-700 transition duration-150">
-                        <td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">1</td>
-                        <td class="px-4 py-3 text-sm font-medium text-center">Grammar</td>
-                        <td class="px-4 py-3 text-sm text-center text-indigo-300">Dictation</td>
-                        <td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قواعد وتركيز سمعي</td>
-                    </tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600 transition duration-150">
-                        <td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">2</td>
-                        <td class="px-4 py-3 text-sm font-medium text-center">SSS (Sing Sang Sung)</td>
-                        <td class="px-4 py-3 text-sm text-center text-indigo-300">One Word</td>
-                        <td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">نطق ومفردات سياقية</td>
-                    </tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">3</td><td class="px-4 py-3 text-sm font-medium text-center">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Alike HD</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قراءة وتحدث متقدم</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">4</td><td class="px-4 py-3 text-sm font-medium text-center">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Grammar</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تعابير نحوية وتطبيق قواعد</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">5</td><td class="px-4 py-3 text-sm font-medium text-center">Dictation</td><td class="px-4 py-3 text-sm text-center text-indigo-300">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">إملاء وطلاقة لفظية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">6</td><td class="px-4 py-3 text-sm font-medium text-center">One Word</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">مفردات وقراءة ثقافية</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">7</td><td class="px-4 py-3 text-sm font-medium text-center">Alike HD</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تحدث متقدم وتعابير اصطلاحية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">8</td><td class="px-4 py-3 text-sm font-medium text-center">Grammar</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Dictation</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قواعد وتركيز سمعي</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">9</td><td class="px-4 py-3 text-sm font-medium text-center">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-indigo-300">One Word</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">نطق ومفردات سياقية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">10</td><td class="px-4 py-3 text-sm font-medium text-center">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Alike HD</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قراءة وتحدث متقدم</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">11</td><td class="px-4 py-3 text-sm font-medium text-center">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Grammar</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تعابير نحوية وتطبيق قواعد</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">12</td><td class="px-4 py-3 text-sm font-medium text-center">Dictation</td><td class="px-4 py-3 text-sm text-center text-indigo-300">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">إملاء وطلاقة لفظية</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">13</td><td class="px-4 py-3 text-sm font-medium text-center">One Word</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">مفردات وقراءة ثقافية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">14</td><td class="px-4 py-3 text-sm font-medium text-center">Alike HD</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تحدث متقدم وتعابير اصطلاحية</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">15</td><td class="px-4 py-3 text-sm font-medium text-center">Grammar</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Dictation</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قواعد وتركيز سمعي</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">16</td><td class="px-4 py-3 text-sm font-medium text-center">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-indigo-300">One Word</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">نطق ومفردات سياقية</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">17</td><td class="px-4 py-3 text-sm font-medium text-center">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Alike HD</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قراءة وتحدث متقدم</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">18</td><td class="px-4 py-3 text-sm font-medium text-center">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Grammar</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تعابير نحوية وتطبيق قواعد</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">19</td><td class="px-4 py-3 text-sm font-medium text-center">Dictation</td><td class="px-4 py-3 text-sm text-center text-indigo-300">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">إملاء وطلاقة لفظية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">20</td><td class="px-4 py-3 text-sm font-medium text-center">One Word</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">مفردات وقراءة ثقافية</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">21</td><td class="px-4 py-3 text-sm font-medium text-center">Alike HD</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تحدث متقدم وتعابير اصطلاحية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">22</td><td class="px-4 py-3 text-sm font-medium text-center">Grammar</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Dictation</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قواعد وتركيز سمعي</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">23</td><td class="px-4 py-3 text-sm font-medium text-center">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-indigo-300">One Word</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">نطق ومفردات سياقية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">24</td><td class="px-4 py-3 text-sm font-medium text-center">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Alike HD</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قراءة وتحدث متقدم</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">25</td><td class="px-4 py-3 text-sm font-medium text-center">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Grammar</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تعابير نحوية وتطبيق قواعد</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">26</td><td class="px-4 py-3 text-sm font-medium text-center">Dictation</td><td class="px-4 py-3 text-sm text-center text-indigo-300">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">إملاء وطلاقة لفظية</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">27</td><td class="px-4 py-3 text-sm font-medium text-center">One Word</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Elmgazine</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">مفردات وقراءة ثقافية</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">28</td><td class="px-4 py-3 text-sm font-medium text-center">Alike HD</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Figurative Focus</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">تحدث متقدم وتعابير اصطلاحية</td></tr>
-                    <tr class="bg-gray-800 hover:bg-gray-700"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">29</td><td class="px-4 py-3 text-sm font-medium text-center">Grammar</td><td class="px-4 py-3 text-sm text-center text-indigo-300">Dictation</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">قواعد وتركيز سمعي</td></tr>
-                    <tr class="bg-gray-700 hover:bg-gray-600"><td class="px-4 py-3 text-sm font-medium text-center text-yellow-400">30</td><td class="px-4 py-3 text-sm font-medium text-center">SSS (Sing Sang Sung)</td><td class="px-4 py-3 text-sm text-center text-indigo-300">One Word</td><td class="px-4 py-3 text-sm text-center text-gray-400 hidden md:table-cell">نطق ومفردات سياقية</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</body>
-</html>        }
-
-        /* Timeline Circle Marker */
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: -32px; /* Adjusted to align with the vertical line */
-            width: 20px;
-            height: 20px;
-            background-color: #0d1117; /* Same as body background */
-            border: 4px solid #34d399; /* Emerald circle border */
-            border-radius: 50%;
-            z-index: 10;
-        }
         
-        /* Specific Marker for Holidays */
-        .holiday-marker::after {
-            border-color: #f97316; /* Orange for rest */
-            background-color: #f97316;
-        }
-
-        /* Card Style - Gaming / Console look */
-        .activity-card-new {
-            background-color: #1e293b; /* Slate-800 */
-            border-radius: 0.75rem;
-            box-shadow: 0 0 10px rgba(52, 211, 153, 0.2); /* Soft green glow */
-            transition: transform 0.2s, box-shadow 0.2s;
-            border-left: 5px solid transparent;
-            cursor: pointer;
-        }
-        
-        .activity-card-new:not(.holiday-card):hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 25px rgba(52, 211, 153, 0.4);
-            border-left-color: #34d399;
-        }
-
-        /* Holiday Card Styling */
-        .holiday-card {
-            background-color: #334155; /* Slate-700 */
-            border-left: 5px solid #f97316;
-            opacity: 0.8;
-            cursor: default;
-        }
-
-        /* Badge for W.D. Number (Top Right on RTL) */
-        .wd-badge-new {
-            background-color: #34d399; /* Emerald Green */
-            color: #1f2937;
-            font-weight: bold;
-            padding: 4px 10px;
-            border-top-right-radius: 0.75rem;
-            border-bottom-left-radius: 0.75rem;
-            font-size: 0.875rem; /* text-sm */
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-
-        /* Weekly Separator */
-        .week-separator {
-            border-right: 2px solid #f97316; /* Orange line for separation */
-            margin-top: 40px;
-            margin-bottom: 40px;
-            padding-right: 20px;
-            position: relative;
-        }
-        .week-separator::after {
-             content: '★';
-             position: absolute;
-             top: 50%;
-             right: -25px;
-             transform: translateY(-50%);
-             font-size: 1.5rem;
-             color: #f97316;
-        }
-
-        @media (max-width: 640px) {
-            .timeline {
-                padding-right: 15px;
-                margin-right: 15px;
-            }
-            .timeline-item::after {
-                right: -24px;
-                width: 16px;
-                height: 16px;
-                border-width: 3px;
-            }
-            .week-separator::after {
-                right: -18px;
-                font-size: 1.2rem;
-            }
-        }
-    </style>
-</head>
-<body class="p-4 sm:p-8">
-
-    <!-- Main Container: Centered and responsive -->
-    <div class="max-w-4xl mx-auto">
-        
-        <!-- Header Section -->
-        <header class="text-center mb-10 p-4 border-b-4 border-emerald-500">
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-emerald-400 mb-2 tracking-wider">
-                برنامج XBox 30 يوم عمل
-            </h1>
-            <p class="text-base text-gray-400">
-                خطة عمل (5 أيام / أسبوع) | **إجمالي 60 بوست**
-            </p>
-        </header>
-
-        <!-- Data Structure (Vertical Timeline) -->
-        <div id="schedule-container" class="timeline">
-            <!-- Data will be inserted here by JavaScript -->
-        </div>
+        <footer class="p-4 text-center text-xs opacity-70 bg-gray-900 border-t border-indigo-700">
+            هذه الصفحة تعرض الجدول النهائي لـ 30 يوم عمل. (لإضافة خاصية "تتبع الطالب"، يجب ربط هذا الكود بقاعدة بيانات لـ Sheetos).
+        </footer>
 
     </div>
-
-    <script>
-        // Data containing the full 30-day work schedule over 6 calendar weeks
-        const scheduleData = [
-            // Week 1
-            { week: 'الأول', day: 'الأحد', wd: '1.1', activity1: 'Grammar', activity2: 'Dictation', isHoliday: false, focus: 'القواعد والتدقيق الإملائي' },
-            { week: 'الأول', day: 'الإثنين', wd: '1.2', activity1: 'SSS (Sing Sang Sung)', activity2: 'One Word', isHoliday: false, focus: 'النطق والمفردات السياقية' },
-            { week: 'الأول', day: 'الثلاثاء', wd: '1.3', activity1: 'Elmgazine', activity2: 'Alike HD', isHoliday: false, focus: 'القراءة والتحدث المتقدم' },
-            { week: 'الأول', day: 'الأربعاء', wd: '1.4', activity1: 'Grammar', activity2: 'Figurative Focus', isHoliday: false, focus: 'النحو والتعابير الاصطلاحية' },
-            { week: 'الأول', day: 'الخميس', wd: '1.5', activity1: 'Dictation', activity2: 'SSS (Sing Sang Sung)', isHoliday: false, focus: 'الإملاء والطلاقة اللفظية' },
-            { week: 'الأول', day: 'الجمعة', wd: '', activity1: 'إجازة أسبوعية', activity2: 'راحة وإثراء شخصي', isHoliday: true, focus: 'استراحة' },
-            { week: 'الأول', day: 'السبت', wd: '', activity1: 'إجازة أسبوعية', activity2: 'مراجعة حرة', isHoliday: true, focus: 'استراحة' },
-            
-            // Week 2 
-            { week: 'الثاني', day: 'الأحد', wd: '2.1', activity1: 'Figurative Focus', activity2: 'Elmgazine', isHoliday: false, focus: 'التعابير والقراءة الثقافية' },
-            { week: 'الثاني', day: 'الإثنين', wd: '2.2', activity1: 'Grammar', activity2: 'One Word', isHoliday: false, focus: 'القواعد والمفردات' },
-            { week: 'الثاني', day: 'الثلاثاء', wd: '2.3', activity1: 'SSS (Sing Sang Sung)', activity2: 'Dictation', isHoliday: false, focus: 'النطق والإملاء' },
-            { week: 'الثاني', day: 'الأربعاء', wd: '2.4', activity1: 'Alike HD', activity2: 'Grammar', isHoliday: false, focus: 'التحدث المتقدم والقواعد' },
-            { week: 'الثاني', day: 'الخميس', wd: '2.5', activity1: 'One Word', activity2: 'Figurative Focus', isHoliday: false, focus: 'المفردات والتعابير' },
-            { week: 'الثاني', day: 'الجمعة', wd: '', activity1: 'إجازة أسبوعية', activity2: 'راحة وإثراء شخصي', isHoliday: true, focus: 'استراحة' },
-            { week: 'الثاني', day: 'السبت', wd: '', activity1: 'إجازة أسبوعية', activity2: 'مراجعة حرة', isHoliday: true, focus: 'استراحة' },
-
-            // Week 3
-            { week: 'الثالث', day: 'الأحد', wd: '3.1', activity1: 'Dictation', activity2: 'Elmgazine', isHoliday: false, focus: 'الإملاء والقراءة' },
-            { week: 'الثالث', day: 'الإثنين', wd: '3.2', activity1: 'Alike HD', activity2: 'SSS (Sing Sang Sung)', isHoliday: false, focus: 'التحدث والنطق' },
-            { week: 'الثالث', day: 'الثلاثاء', wd: '3.3', activity1: 'Figurative Focus', activity2: 'Grammar', isHoliday: false, focus: 'التعابير والقواعد' },
-            { week: 'الثالث', day: 'الأربعاء', wd: '3.4', activity1: 'One Word', activity2: 'Dictation', isHoliday: false, focus: 'المفردات والإملاء' },
-            { week: 'الثالث', day: 'الخميس', wd: '3.5', activity1: 'Elmgazine', activity2: 'Alike HD', isHoliday: false, focus: 'القراءة والتحدث' },
-            { week: 'الثالث', day: 'الجمعة', wd: '', activity1: 'إجازة أسبوعية', activity2: 'راحة وإثراء شخصي', isHoliday: true, focus: 'استراحة' },
-            { week: 'الثالث', day: 'السبت', wd: '', activity1: 'إجازة أسبوعية', activity2: 'مراجعة حرة', isHoliday: true, focus: 'استراحة' },
-
-            // Week 4
-            { week: 'الرابع', day: 'الأحد', wd: '4.1', activity1: 'SSS (Sing Sang Sung)', activity2: 'Figurative Focus', isHoliday: false, focus: 'النطق والتعابير' },
-            { week: 'الرابع', day: 'الإثنين', wd: '4.2', activity1: 'Grammar', activity2: 'Dictation', isHoliday: false, focus: 'القواعد والإملاء' },
-            { week: 'الرابع', day: 'الثلاثاء', wd: '4.3', activity1: 'One Word', activity2: 'Elmgazine', isHoliday: false, focus: 'المفردات والقراءة' },
-            { week: 'الرابع', day: 'الأربعاء', wd: '4.4', activity1: 'Alike HD', activity2: 'Grammar', isHoliday: false, focus: 'التحدث والقواعد' },
-            { week: 'الرابع', day: 'الخميس', wd: '4.5', activity1: 'Figurative Focus', activity2: 'SSS (Sing Sang Sung)', isHoliday: false, focus: 'التعابير والنطق' },
-            { week: 'الرابع', day: 'الجمعة', wd: '', activity1: 'إجازة أسبوعية', activity2: 'راحة وإثراء شخصي', isHoliday: true, focus: 'استراحة' },
-            { week: 'الرابع', day: 'السبت', wd: '', activity1: 'إجازة أسبوعية', activity2: 'مراجعة حرة', isHoliday: true, focus: 'استراحة' },
-            
-            // Week 5 
-            { week: 'الخامس', day: 'الأحد', wd: '5.1', activity1: 'Dictation', activity2: 'Alike HD', isHoliday: false, focus: 'الإملاء والتحدث' },
-            { week: 'الخامس', day: 'الإثنين', wd: '5.2', activity1: 'Elmgazine', activity2: 'Figurative Focus', isHoliday: false, focus: 'القراءة والتعابير' },
-            { week: 'الخامس', day: 'الثلاثاء', wd: '5.3', activity1: 'Grammar', activity2: 'One Word', isHoliday: false, focus: 'القواعد والمفردات' },
-            { week: 'الخامس', day: 'الأربعاء', wd: '5.4', activity1: 'SSS (Sing Sang Sung)', activity2: 'Dictation', isHoliday: false, focus: 'النطق والإملاء' },
-            { week: 'الخامس', day: 'الخميس', wd: '5.5', activity1: 'Alike HD', activity2: 'Grammar', isHoliday: false, focus: 'التحدث والقواعد' },
-            { week: 'الخامس', day: 'الجمعة', wd: '', activity1: 'إجازة أسبوعية', activity2: 'راحة وإثراء شخصي', isHoliday: true, focus: 'استراحة' },
-            { week: 'الخامس', day: 'السبت', wd: '', activity1: 'إجازة أسبوعية', activity2: 'مراجعة حرة', isHoliday: true, focus: 'استراحة' },
-            
-            // Week 6 (Conclusion)
-            { week: 'الخاتمة', day: 'الأحد', wd: '6.1', activity1: 'Figurative Focus', activity2: 'Elmgazine', isHoliday: false, focus: 'التعابير والقراءة' },
-            { week: 'الخاتمة', day: 'الإثنين', wd: '6.2', activity1: 'One Word', activity2: 'SSS (Sing Sang Sung)', isHoliday: false, focus: 'المفردات والنطق' }
-        ];
-
-        // Function to group data by week
-        function groupByWeek(data) {
-            return data.reduce((acc, item) => {
-                const key = item.week;
-                if (!acc[key]) {
-                    acc[key] = [];
-                }
-                acc[key].push(item);
-                return acc;
-            }, {});
-        }
-
-        // Function to render an activity badge
-        function renderActivityBadge(activityName) {
-            let color = 'bg-gray-600';
-            // Custom colors for activity types based on the Vision brief
-            if (['Grammar', 'Dictation'].includes(activityName)) {
-                color = 'bg-indigo-700'; // Logic & Structure
-            } else if (['SSS (Sing Sang Sung)', 'Alike HD'].includes(activityName)) {
-                color = 'bg-teal-700'; // Speaking & Fluency
-            } else if (['One Word', 'Figurative Focus', 'Elmgazine'].includes(activityName)) {
-                color = 'bg-pink-700'; // Vocabulary & Culture
-            }
-
-            return `
-                <span class="text-xs font-semibold px-2 py-0.5 rounded-full text-white ${color} whitespace-nowrap shadow-md">
-                    ${activityName}
-                </span>
-            `;
-        }
-
-        // Function to render the schedule
-        function renderSchedule() {
-            const groupedData = groupByWeek(scheduleData);
-            const container = document.getElementById('schedule-container');
-            container.innerHTML = ''; // Clear previous content
-
-            let firstWeek = true;
-
-            // Loop through each week group
-            for (const week in groupedData) {
-                const weekActivities = groupedData[week];
-
-                // Add separator between weeks, skip before the very first week
-                if (!firstWeek) {
-                    const separator = document.createElement('div');
-                    separator.className = 'week-separator text-sm font-bold text-orange-400';
-                    separator.innerHTML = `
-                        <div class="mb-4">
-                            <h2 class="text-xl font-extrabold text-orange-400">نهاية الأسبوع ${weekActivities[0].week}</h2>
-                            <p class="text-gray-500">إنجاز عظيم! استعد للأسبوع التالي 🚀</p>
-                        </div>
-                    `;
-                    container.appendChild(separator);
-                }
-                firstWeek = false;
-
-                // Weekly Header (integrated into the timeline flow)
-                const weekHeader = document.createElement('div');
-                weekHeader.className = 'timeline-item mb-6 -mt-4';
-                weekHeader.innerHTML = `
-                    <div class="activity-card-new p-4 text-center border-l-4 border-yellow-500 shadow-xl bg-gray-800/80">
-                        <h3 class="text-2xl font-bold text-yellow-300">
-                            🎯 الأسبوع ${week}
-                        </h3>
-                    </div>
-                `;
-                container.appendChild(weekHeader);
-
-                // Daily Activities List
-                weekActivities.forEach((item) => {
-                    const isHolidayClass = item.isHoliday ? 'holiday-card' : '';
-                    const isHolidayMarker = item.isHoliday ? 'holiday-marker' : '';
-
-                    let content = '';
-                    let focusText = `<p class="text-sm italic text-gray-400 mt-2">${item.focus}</p>`;
-                    
-                    if (item.isHoliday) {
-                        // Holiday card content
-                        const icon = item.day === 'الجمعة' ? '🕌' : '🏠'; 
-                        content = `
-                            <div class="text-center py-2 flex flex-col items-center justify-center h-full">
-                                <span class="text-2xl text-orange-300 mb-1 block">${icon}</span>
-                                <h3 class="text-lg font-bold text-orange-300">${item.activity1}</h3>
-                                <p class="text-sm text-gray-400">${item.activity2}</p>
-                            </div>
-                        `;
-                        focusText = ''; // No focus needed for holiday
-                    } else {
-                        // Regular day card content (detailed 2 posts)
-                        content = `
-                            <!-- W.D. Badge -->
-                            <div class="wd-badge-new">${item.wd}</div>
-
-                            <!-- Activities (Posts) -->
-                            <div class="flex flex-col space-y-3 pt-6">
-                                <!-- Post 1 -->
-                                <div class="flex items-center space-x-2 space-x-reverse">
-                                    <span class="text-gray-400 text-xs">P1:</span>
-                                    ${renderActivityBadge(item.activity1)}
-                                </div>
-                                <!-- Post 2 -->
-                                <div class="flex items-center space-x-2 space-x-reverse">
-                                    <span class="text-gray-400 text-xs">P2:</span>
-                                    ${renderActivityBadge(item.activity2)}
-                                </div>
-                            </div>
-                            ${focusText}
-                        `;
-                    }
-                    
-                    const dayCard = document.createElement('div');
-                    dayCard.className = `timeline-item ${isHolidayMarker}`;
-                    dayCard.innerHTML = `
-                        <div class="activity-card-new ${isHolidayClass} p-4 relative min-h-[120px]">
-                            <!-- Day Header -->
-                            <div class="text-xl font-bold ${item.isHoliday ? 'text-orange-300' : 'text-emerald-300'} mb-2 border-b border-gray-700 pb-1 w-fit">
-                                ${item.day}
-                            </div>
-                            
-                            <!-- Card Content -->
-                            ${content}
-                        </div>
-                    `;
-                    container.appendChild(dayCard);
-                });
-
-            }
-        }
-
-        // Render the schedule when the window loads
-        window.onload = renderSchedule;
-
-    </script>
 </body>
 </html>
